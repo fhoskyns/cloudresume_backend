@@ -16,4 +16,4 @@ phases:
             - grep -Fq "user1" Lambda/app.py
     post_build:
         commands:
-            - echo "we are in the post build phase"
+            - echo "we are in the post build phase!"
