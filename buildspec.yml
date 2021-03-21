@@ -18,7 +18,7 @@ phases:
     post_build:
         commands:
             - echo "we are in the post build phase!"
-            - sam deploy --template-file packaged-template.yml --stack-name my-sam-app --profile developer
+            - sam deploy --template-file packaged-template.yml --stack-name my-sam-app
 
 artifacts:
   primary-artifacts:
