@@ -20,5 +20,5 @@ phases:
             - echo "we are in the post build phase!"
 artifacts:
   secondary-artifacts:
-    files:
-        - packaged-template.yml
+        files:
+            - packaged-template.yml
