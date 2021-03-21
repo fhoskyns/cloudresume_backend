@@ -16,4 +16,4 @@ phases:
             - sam deploy --template-file packaged-template.yml --stack-name my-sam-app
     post_build:
         commands:
-            - echo "we are in the post build phase, man"
+            - echo "we are in the post build phase"
