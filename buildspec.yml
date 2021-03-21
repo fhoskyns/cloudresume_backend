@@ -1,0 +1,19 @@
+version: 0.2
+
+phases: 
+    install:
+        runtime-versions:
+            python: 3.8
+        commands:
+            - echo "installing something"
+    pre_build:
+        commands: 
+            - echo "we are in the pre build phase"
+    build:
+        commands:
+            - echo "we are in the build block"
+            - echo "we will run some tests"
+            - grep -Fq "user1" app.py
+    post_build:
+        commands:
+            - echo "we are in the post build phase"
