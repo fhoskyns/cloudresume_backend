@@ -14,14 +14,13 @@ phases:
             - echo "we are in the build block"
             - echo "we will run some tests"
             - grep -Fq "user1" Lambda/app.py
-            - aws cloudformation package --template template.yml --s3-bucket aws-sam-cli-managed-default-samclisourcebucket-14u44ibuo56vd --output-template packaged-template.json
+            - sam package --template-file template.yml --s3-bucket aws-sam-cli-managed-default-samclisourcebucket-14u44ibuo56vd --output-template-file packaged-template.yml
     post_build:
         commands:
             - echo "we are in the post build phase!"
 
 artifacts:
-  type: zip
   primary-artifacts:
     artifact1:
       files:
-        - packaged-template.json
+        - packaged-template.yml
