@@ -15,7 +15,6 @@ phases:
             - echo "we will run some tests"
             - grep -Fq "user1" Lambda/app.py
             - sam package --template-file template.yml --s3-bucket aws-sam-cli-managed-default-samclisourcebucket-14u44ibuo56vd --output-template-file packaged-template.yml
-            - sam deploy --template-file template.yml --stack-name my-sam-app
     post_build:
         commands:
             - echo "we are in the post build phase!"
