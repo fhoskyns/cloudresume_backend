@@ -13,7 +13,7 @@ phases:
         commands:
             - echo "we are in the build block"
             - echo "we will run some tests"
-            - sam deploy --template-file https://aws-sam-cli-managed-default-samclisourcebucket-14u44ibuo56vd.s3.eu-west-2.amazonaws.com/c53827e5ce4f39bea9a1c4715d143c53 --stack-name my-sam-app
+            - sam deploy
     post_build:
         commands:
             - echo "we are in the post build phase"
