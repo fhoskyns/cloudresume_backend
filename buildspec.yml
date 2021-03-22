@@ -15,7 +15,7 @@ phases:
             - echo "we will run some tests"
             - grep -Fq "user1" Lambda/app.py
             - sam build
-            - sam deploy --profile developer --region eu-west-2
+            - sam deploy -y
     post_build:
         commands:
             - echo "we are in the post build phase!"
