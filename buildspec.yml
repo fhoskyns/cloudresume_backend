@@ -21,5 +21,7 @@ phases:
 
 artifacts:
   type: zip
-  files:
-    - packaged-template.json
+  primary-artifacts:
+    artifact1:
+      files:
+        - packaged-template.json
