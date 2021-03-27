@@ -15,7 +15,7 @@ phases:
             - echo "we will run some tests"
             - grep -Fq "user1" Lambda/app.py
             - sam build
-            - sam deploy --no-fail-on-empty-changeset
+            - sam deploy --y --no-fail-on-empty-changeset
     post_build:
         commands:
             - echo "we are in the post build phase!!"
