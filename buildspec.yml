@@ -18,4 +18,4 @@ phases:
             - sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
     post_build:
         commands:
-            - echo "we are in the post build phase!!"
+            - echo "we are in the post build phase!"
